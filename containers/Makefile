@@ -27,9 +27,9 @@ SEQRENAMER_TAG=v0.0.1
 SEQRENAMER_REPO=https://github.com/darcyabjones/seqrenamer.git
 SEQRENAMER_PREFIX_ARG=$(INSTALL_BASE)/seqrenamer/$(SEQRENAMER_TAG)
 
-RMBLAST_VERSION=2.9.0+
-RMBLAST_URL=ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-src.tar.gz
-RMBLAST_PATCH_URL=http://www.repeatmasker.org/isb-2.9.0+-rmblast.patch.gz
+RMBLAST_VERSION=2.14.1
+RMBLAST_URL=https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/$(RMBLAST_VERSION)/ncbi-blast-$(RMBLAST_VERSION)+-src.tar.gz
+RMBLAST_PATCH_URL=https://www.repeatmasker.org/rmblast/isb-$(RMBLAST_VERSION)+-rmblast.patch.gz
 RMBLAST_PREFIX_ARG=$(INSTALL_BASE)/rmblast/$(RMBLAST_VERSION)
 
 TRF_VERSION=409
