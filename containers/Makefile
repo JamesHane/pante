@@ -11,8 +11,8 @@ $(DOCKER_USER)/$(notdir $1):$(TAG)
 endef
 
 # SOFTWARE_VERSIONs
-GENOMETOOLS_VERSION=1.5.10
-GENOMETOOLS_URL=http://genometools.org/pub/genometools-$(GENOMETOOLS_VERSION).tar.gz
+GENOMETOOLS_VERSION=1.6.5
+GENOMETOOLS_URL=https://github.com/genometools/genometools/releases/download/v$(GENOMETOOLS_VERSION)/gt-$(GENOMETOOLS_VERSION)-Linux_x86_64-64bit-complete.tar.gz
 GENOMETOOLS_PREFIX_ARG=$(INSTALL_BASE)/genometools/$(GENOMETOOLS_VERSION)
 
 BEDTOOLS_VERSION=2.28.0
