@@ -6,7 +6,7 @@ FROM "${HMMER3_IMAGE}" as hmmer3_builder
 FROM "${IMAGE}" as genometools_builder
 
 ARG GENOMETOOLS_VERSION
-ARG GENOMETOOLS_URL="http://genometools.org/pub/genometools-${GENOMETOOLS_VERSION}.tar.gz"
+ARG GENOMETOOLS_URL="https://github.com/genometools/genometools/releases/download/v${GENOMETOOLS_VERSION}/gt-${GENOMETOOLS_VERSION}-Linux_x86_64-64bit-complete.tar.gz"
 ARG GENOMETOOLS_PREFIX_ARG="/opt/genometools/${GENOMETOOLS_VERSION}"
 ENV GENOMETOOLS_PREFIX="${GENOMETOOLS_PREFIX_ARG}"
 
